@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KKTimeWatch_Example' do
+  pod 'KKTimeWatch', :path => '../'
+
+  target 'KKTimeWatch_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

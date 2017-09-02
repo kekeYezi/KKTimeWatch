@@ -1,0 +1,6 @@
+framework module Pods_KKTimeWatch_Tests {
+  umbrella header "Pods-KKTimeWatch_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

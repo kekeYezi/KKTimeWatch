@@ -1,0 +1,16 @@
+PODS:
+  - KKTimeWatch (0.1.0)
+
+DEPENDENCIES:
+  - KKTimeWatch (from `../`)
+
+EXTERNAL SOURCES:
+  KKTimeWatch:
+    :path: ../
+
+SPEC CHECKSUMS:
+  KKTimeWatch: 5f517e4060aecc54f0f0039230c33b4bbf8a0075
+
+PODFILE CHECKSUM: accdce5e68789066575f285b0b767cc00f7cded1
+
+COCOAPODS: 1.1.1

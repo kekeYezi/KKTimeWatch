@@ -1,0 +1,6 @@
+framework module KKTimeWatch {
+  umbrella header "KKTimeWatch-umbrella.h"
+
+  export *
+  module * { export * }
+}
