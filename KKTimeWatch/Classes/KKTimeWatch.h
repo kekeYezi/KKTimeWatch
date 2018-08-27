@@ -16,7 +16,7 @@
 
 #define KKTimeWatchRecord(value) [[KKTimeWatch sharedTimewatch] watchWithDescription:value];
 
-#define KKTimeWatchStop(value) [[KKTimeWatch sharedTimewatch] watchEndWithDescription:value;
+#define KKTimeWatchStop(value) [[KKTimeWatch sharedTimewatch] watchEndWithDescription:value];
 
 NS_ASSUME_NONNULL_BEGIN
 

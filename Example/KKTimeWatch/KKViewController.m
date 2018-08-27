@@ -18,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    KKTimeWatch_Start;
+    KKTimeWatchStart;
     
     for (int i = 0; i < 100; i++) {
         NSLog(@"%d",i);
@@ -36,15 +36,15 @@
         NSLog(@"%d",i);
     }
     
-    KKTimeWatchEnd(@"Log10000次 执行时间");
+    KKTimeWatchStop(@"Log10000次 执行时间");
     
-    KKTimeWatch_Reset;
+    KKTimeWatchReset;
     
     for (int i = 0; i < 1000; i++) {
         NSLog(@"%d",i);
     }
     
-    KKTimeWatchEnd(@"Log1000次 执行时间");
+    KKTimeWatchStop(@"Log1000次 执行时间");
     
 	// Do any additional setup after loading the view, typically from a nib.
 }
