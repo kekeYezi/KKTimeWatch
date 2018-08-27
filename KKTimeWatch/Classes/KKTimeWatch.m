@@ -10,6 +10,7 @@
 //
 
 #import "KKTimeWatch.h"
+#import <UIKit/UIKit.h>
 
 @interface KKTimeWatch ()
 
