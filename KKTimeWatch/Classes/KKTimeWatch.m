@@ -33,8 +33,7 @@
     return timewatch;
 }
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         self.timeRecordArray = [NSMutableArray array];
@@ -43,18 +42,18 @@
     return self;
 }
 
-- (void)kk_startWatch {
+- (void)startWatch {
     self.startTimeInterval = CACurrentMediaTime();
 }
 
-- (void)kk_resetWatch {
+- (void)resetWatch {
     self.startTimeInterval = CACurrentMediaTime();
     self.passTimeInterval = 0;
     [self.timeRecordArray removeAllObjects];
 }
 
-- (void)kk_watchEndWithDescription:(NSString *)description {
-    [self kk_watchWithDescription:description];
+- (void)watchEndWithDescription:(NSString *)description {
+    [self watchWithDescription:description];
     
     NSString *totoalInfo = [NSString stringWithFormat:@"\n总消耗:%.6f", self.passTimeInterval];
     NSString *showInfoString = [[self.timeRecordArray componentsJoinedByString:@"\n"] stringByAppendingString:totoalInfo];
@@ -62,7 +61,7 @@
     [[[UIAlertView alloc] initWithTitle:@"KKTimeWatch 时间序列" message:showInfoString delegate:self cancelButtonTitle:@"ok" otherButtonTitles: nil] show];
 }
 
-- (void)kk_watchWithDescription:(NSString *)description {
+- (void)watchWithDescription:(NSString *)description {
     NSTimeInterval currentTimeInterval = CACurrentMediaTime();
     NSTimeInterval resultTimeInterval = currentTimeInterval - self.startTimeInterval - self.passTimeInterval;
     self.passTimeInterval = self.passTimeInterval + resultTimeInterval;

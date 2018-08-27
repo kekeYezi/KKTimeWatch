@@ -10,13 +10,13 @@
 
 #import <Foundation/Foundation.h>
 
-#define KKTimeWatch_Start [[KKTimeWatch sharedTimewatch] kk_startWatch]
+#define KKTimeWatchStart [[KKTimeWatch sharedTimewatch] startWatch];
 
-#define KKTimeWatch_Reset [[KKTimeWatch sharedTimewatch] kk_resetWatch]
+#define KKTimeWatchReset [[KKTimeWatch sharedTimewatch] resetWatch];
 
-#define KKTimeWatchRecord(value) [[KKTimeWatch sharedTimewatch] kk_watchWithDescription:value]
+#define KKTimeWatchRecord(value) [[KKTimeWatch sharedTimewatch] watchWithDescription:value];
 
-#define KKTimeWatchEnd(value) [[KKTimeWatch sharedTimewatch] kk_watchEndWithDescription:value]
+#define KKTimeWatchStop(value) [[KKTimeWatch sharedTimewatch] watchEndWithDescription:value;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,13 +24,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)sharedTimewatch;
 
-- (void)kk_startWatch;
+- (void)startWatch;
 
-- (void)kk_resetWatch;
+- (void)resetWatch;
 
-- (void)kk_watchWithDescription:(NSString *)description;
+- (void)watchWithDescription:(NSString *)description;
 
-- (void)kk_watchEndWithDescription:(NSString *)description;
+- (void)watchEndWithDescription:(NSString *)description;
 
 @end
 
